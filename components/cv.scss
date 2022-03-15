@@ -1,0 +1,127 @@
+.cv-card {
+    display: flex;
+    align-items: center;
+    height: 5.5rem;
+    transition: 0.2s;
+}
+
+.cv-card:hover {
+    opacity: 0.8;
+    cursor: default;
+}
+
+.cv-card img {
+    height: 3.5rem;
+    width: 3.5rem;
+    // margin-left: 2rem;
+    margin-right: 1rem;
+    border: 1px solid rgba(75, 75, 75, 0.4);
+    border-radius: 15px;
+}
+
+.cv-card p {
+    margin: 0;
+    font-size: 12px;
+    // font-weight: lighter;
+}
+
+.cv-card h5 {
+    margin: 0;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+.cv-card span {
+    font-size: 12px;
+    opacity: 0.7;
+    font-weight: lighter;
+}
+
+.cv-experience {
+    width: 33%;
+    background-color: rgba(74, 74, 209, 1);
+    border-top: 1rem solid rgba(74, 74, 209, 1);
+    margin-left: -4rem;
+    padding: 4rem;
+}
+
+.cv-education {
+    width: 33%;
+    padding: 4rem;
+    border-top: 1rem solid rgba(74, 74, 209, 1);
+}
+
+.cv-profile {
+  width: 33%;
+  background-color: whitesmoke;
+  border-top: 1rem solid rgba(74, 74, 209, 1);
+  padding: 4rem;
+  color: #0A0A0A;
+}
+
+.cv-profile h1 {
+  margin-top: 0;
+}
+
+.cv-profile img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  border: 1rem solid rgba(74, 74, 209, 1);
+}
+#socials {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-size: 25px;
+  color: #0A0A0A;
+}
+
+#socials li {
+  display: inline;
+  margin: 0;
+  padding: 3px;
+  list-style-type: none;
+}
+
+#socials li a:hover {
+  color: #0A0A0A;
+}
+
+#socials li a {
+  text-decoration: none;
+  color: rgba(74, 74, 209, 1);
+  transition: 0.2s;
+}
+
+.skills {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 1.5rem;
+}
+
+.skill {
+  background-color: rgba(74, 74, 209, 0.1);
+  border-radius: 7px;
+  border: 1px solid rgba(74, 74, 209, 0.08);
+  padding: 0.4rem 0.6rem;
+  color: rgba(74, 74, 209, 0.7);
+  font-size: 12px;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+  transition: 0.2s;
+}
+
+.skill:hover {
+  background-color: rgba(74, 74, 209, 0.2);
+  cursor: default;
+}

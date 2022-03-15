@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap');
+@import url(components/navbar.scss);
+@import url(components/button.scss);
+@import url(components/colors.scss);
+@import url(components/cv.scss);
+@import url(components/banner.scss);
+
+body {
+  margin: 0;
+  background-color: #0A0A0A;
+  font-family: 'Inter', sans-serif;
+  color: whitesmoke;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.wrapper {
+  margin: 0;
+  margin-left: 4rem;
+}
+
+#cv {
+  display: flex;
+  width: 100%;
+}
+
+em {
+  color: rgb(74, 74, 209);
+  font-style: normal;
+}

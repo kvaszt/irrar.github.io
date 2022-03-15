@@ -1,0 +1,31 @@
+.button {
+  background-color: rgb(74, 74, 209);
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  border: 2px solid rgb(74, 74, 209);
+  text-decoration: none;
+  color: #0a0a0a;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: rgb(74, 74, 209);
+}
+
+.button-inv {
+  
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  border: 2px solid rgb(74, 74, 209);
+  text-decoration: none;
+  color: rgb(74, 74, 209);
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+.button-inv:hover {
+  background-color: rgb(74, 74, 209);
+  color: #0a0a0a;
+}

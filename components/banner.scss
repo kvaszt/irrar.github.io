@@ -1,0 +1,13 @@
+#banner {
+  margin: 0;
+  display: flex;
+  width: 100%;
+  margin-left: -2.8rem;
+  margin-right: -2.8rem;
+}
+
+.banner-left {
+  background-color: rgb(74, 74, 209);
+  width: 30%;
+  height: calc(100vh - 90px);
+}
