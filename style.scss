@@ -19,12 +19,12 @@ h1 {
 
 .wrapper {
   margin: 0;
-  margin-left: 4rem;
+  // margin-left: 4rem;
+  // margin-right: 4rem;
 }
 
-#cv {
-  display: flex;
-  width: 100%;
+.ml-4 {
+  margin-left: 4rem;
 }
 
 em {

@@ -1,13 +1,39 @@
 #banner {
-  margin: 0;
   display: flex;
-  width: 100%;
-  margin-left: -2.8rem;
-  margin-right: -2.8rem;
+  align-items: stretch;
+  width: 100vw;
+  min-height: calc(100vh - 90px);
+
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+#banner h1 {
+  margin-bottom: 1rem;
 }
 
 .banner-left {
+  background-color: #0a0a0a;
+  width: 50%;
+  padding: 4rem;
+}
+
+.banner-right {
   background-color: rgb(74, 74, 209);
-  width: 30%;
-  height: calc(100vh - 90px);
+  width: 50%;
+  padding: 4rem;
+}
+
+.banner-right img {
+  width: 100%;
+}
+
+#paragraph {
+  font-weight: 200;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }

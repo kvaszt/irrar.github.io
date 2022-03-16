@@ -41,8 +41,30 @@ ul#menu li {
   border-radius: 7px;
 }
 
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(74, 74, 209, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(74, 74, 209, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(74, 74, 209, 0);
+	}
+}
+
 .nav-link:hover {
   background-color: rgb(74, 74, 209);
   padding: 0.3rem 0.5rem;
   border-radius: 7px;
+
+  box-shadow: 0 0 0 0 rgba(74, 74, 209, 1);
+	transform: scale(1);
+	animation: pulse 2s;
+  animation-iteration-count: 1
 }
