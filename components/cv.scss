@@ -91,13 +91,13 @@ h2 {
 }
 
 h5 {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 #cv {
   display: flex;
-  align-items: stretch;
-  width: 100%;
+  // flex-wrap: wrap;
+  // align-items: stretch;
 
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -106,12 +106,64 @@ h5 {
             animation: fadein 2s;
 }
 
+
+ul {
+  padding: 0;
+}
+
+.list-inline {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px;
+  padding-right: 0.5rem;
+}
+
+.list-inline li i {
+  cursor: default;
+  font-size: 18px;
+  color: rgba(74, 74, 209, 0.4);
+  transition: 0.1s;
+}
+
+.list-inline li i:hover {
+  font-size: 18px;
+  color: rgba(74, 74, 209, 1);
+}
+
+h6 {
+  margin: 0;
+  margin-top: -1.2rem;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+.acsp {
+  margin-top: 1rem;
+  width: fit-content;
+  border: 1px solid #0A0A0A;
+  border-radius: 5px;
+}
+
+#acsp {
+  filter: invert(1);
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.6rem;
+  // display: block;
+  width: 160px;
+}
+
 .cv-experience {
-    width: 33%;
+    width: 30%;
     background-color: rgba(74, 74, 209, 1);
-    border-top: 1rem solid rgba(74, 74, 209, 1);
+    // border-top: 1rem solid whitesmoke;
     padding: 4rem;
-    min-height: calc(100vh - 337px);
 }
 
 @media (max-width: 720px) {  /** Größerer Viewport: Tablett **/
@@ -122,9 +174,10 @@ h5 {
 }
 
 .cv-education {
-    width: 33%;
+    width: 30%;
     padding: 4rem;
-    border-top: 1rem solid rgba(74, 74, 209, 1);
+    // border-top: 1rem solid whitesmoke;
+    background-color: rgba(74, 74, 209, 1);
 }
 
 @media (max-width: 720px) {  /** Größerer Viewport: Tablett **/
@@ -135,11 +188,20 @@ h5 {
 }
 
 .cv-profile {
-  width: 33%;
-  background-color: whitesmoke;
-  border-top: 1rem solid rgba(74, 74, 209, 1);
+  position: relative;
+  width: 40%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.9)), url(../images/profile_avatar.jpg);
+  background-size: cover;
+  background-position: bottom;
+  // border-top: 1rem solid whitesmoke;
   padding: 4rem;
   color: #0A0A0A;
+}
+
+#profile-info {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
 }
 
 @media (max-width: 720px) {  /** Größerer Viewport: Tablett **/
@@ -159,21 +221,6 @@ h5 {
   }
 }
 
-#avatar {
-  width: 150px;
-  border-radius: 50%;
-  margin: 0 auto;
-  display: block;
-  border: 1rem solid rgba(74, 74, 209, 1);
-}
-
-#acsp {
-  margin: 0 auto;
-  margin-top: 2rem;
-  display: block;
-  width: 220px;
-}
-
 @media (max-width: 720px) {  /** Größerer Viewport: Tablett **/
 	#avatar, #acsp {
     width: 100px;
@@ -186,50 +233,53 @@ h5 {
   }
 }
 
-#socials {
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  font-size: 25px;
+
+/** TECH STACK **/
+
+.stack {
+  display: flex;
+
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+.tech {
+  position: relative;
+  background-color: #0A0A0A;
+  width: 70%;
+  padding: 4rem;
+}
+
+.interests {
+  background-color: whitesmoke;
+  width: 30%;
+  padding: 4rem;
   color: #0A0A0A;
-}
-
-#socials li {
-  display: inline;
-  margin: 0;
-  padding: 3px;
-  list-style-type: none;
-}
-
-#socials li a:hover {
-  color: #0A0A0A;
-}
-
-#socials li a {
-  text-decoration: none;
-  color: rgba(74, 74, 209, 1);
-  transition: 0.2s;
 }
 
 .skills {
   display: flex;
   flex-flow: row wrap;
+  // justify-content: center;
   margin-top: 1.5rem;
 }
 
 .skill {
-  background-color: rgba(74, 74, 209, 0.1);
+  background-color: rgba(145, 145, 145, 0.1);
   border-radius: 7px;
-  border: 1px solid rgba(74, 74, 209, 0.08);
-  padding: 0.4rem 0.6rem;
-  color: rgba(74, 74, 209, 0.7);
-  font-size: 12px;
-  margin-right: 0.4rem;
-  margin-bottom: 0.4rem;
-  transition: 0.2s;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0.6rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 13px;
+  margin-right: 0.7rem;
+  margin-bottom: 0.7rem;
+  transition: 0.1s;
 }
 
 .skill:hover {
-  background-color: rgba(74, 74, 209, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   cursor: default;
 }

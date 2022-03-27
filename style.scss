@@ -8,12 +8,19 @@
 
 body {
   margin: 0;
+  height: 100%;
   background-color: #0A0A0A;
   font-family: 'Inter', sans-serif;
   color: whitesmoke;
 }
 
+html {
+  margin: 0;
+  height: 100%;
+}
+
 h1 {
+  margin: 0;
   font-weight: 700;
   font-size: 40px;
 }
